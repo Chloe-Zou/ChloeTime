@@ -1,2 +1,2 @@
 # ChloeTime
-Adventure killing Chloes
+Adventure cooking with Chloe
