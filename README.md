@@ -6,4 +6,4 @@ Adventure cooking with Chloe
 
 # GUI Mockups
 
-[Start Screen](https://github.com/Chloe-Zou/ChloeTime/blob/main/images/start.png?raw=true)
+![Start Screen](https://github.com/Chloe-Zou/ChloeTime/blob/main/images/start.png?raw=true)
