@@ -7,3 +7,4 @@ The goal of this game is to learn new skills and techniques, and eventually beco
 # GUI Mockups
 
 ![Start Screen](https://github.com/Chloe-Zou/ChloeTime/blob/main/images/start.png?raw=true)
+![Grandpa Cat](https://github.com/Chloe-Zou/ChloeTime/blob/main/images/gramps.png?raw=true)
