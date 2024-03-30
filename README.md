@@ -7,6 +7,12 @@ The goal of this game is to learn new skills and techniques, and eventually beco
 ![Class Diagram](https://github.com/Chloe-Zou/ChloeTime/blob/main/images/cdcookoff.drawio.png?raw=true)
 
 # GUI Mockups
-
+Start Screen:
 ![Start Screen](https://github.com/Chloe-Zou/ChloeTime/blob/main/images/start.png?raw=true)
+Grandpa Cat:
 ![Grandpa Cat](https://github.com/Chloe-Zou/ChloeTime/blob/main/images/gramps.png?raw=true)
+Teacher Cat:
+![TEacher](https://github.com/Chloe-Zou/ChloeTime/blob/main/images/onion.png?raw=true)
+Characters:
+![Blue Cat](https://github.com/Chloe-Zou/ChloeTime/blob/main/images/blue_char.png?raw=true)
+![Purple Cat](https://github.com/Chloe-Zou/ChloeTime/blob/main/images/purp_char.png?raw=true)
