@@ -17,6 +17,13 @@ def importPhoto():
   def scale_image(image, factor):
       return pygame.transform.scale(image, (image.get_width() * factor, image.get_height() * factor))
 
+  start_image = scale_image(start_image, scaling_factor)
+  gramps = scale_image(gramps, scaling_factor)
+  passed = scale_image(passed, scaling_factor)
+  teacher = scale_image(teacher, scaling_factor)
+  bagu = scale_image(bagu, scaling_factor)
+  thunk = scale_image(thunk, scaling_factor)
+
 # Defining the start function which contains the start logic
   def start():
     global current_image
