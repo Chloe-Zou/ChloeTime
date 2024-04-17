@@ -17,7 +17,8 @@ screen = pygame.display.set_mode((400, 300))
 
 # #load in images under a variable
 start_image = pygame.image.load('images/start.png')
-  
+thunk = pygame.image.load('images/thunk.png')  
+x=1
 
 # Setting the initial image to start_image
 current_image = start_image
@@ -29,8 +30,10 @@ while True:
             pygame.quit()
             sys.exit()
         elif event.type == KEYDOWN:
-            if event.key == K_1:
-                importPhoto()
+          if event.key == K_1 and x ==1:
+            importPhoto()
+            x += 1
+            current_image = thunk.png
 
     screen.blit(current_image, (100, 0))
     pygame.display.update()
