@@ -4,33 +4,32 @@ import time
 def importPhoto():
   pygame.init()
   screen = pygame.display.set_mode((400, 300))
-  start_image = pygame.image.load('start.png')
-  gramps = pygame.image.load('gramps.png')
-  passed = pygame.image.load('gramps_dead.png')
-  teacher = pygame.image.load('onion.png')
-  bagu = pygame.image.load('BAGUETTE!!!.png')
-  thunk = pygame.image.load('thunk.png')
+  start_image = pygame.image.load('images/start.png')
+  gramps = pygame.image.load('images/gramps.png')
+  passed = pygame.image.load('images/gramps_dead.png')
+  teacher = pygame.image.load('images/onion.png')
+  bagu = pygame.image.load('images/BAGUETTE!!!.png')
+  thunk = pygame.image.load('images/thunk.png')
   #Scale photos bigger
   scaling_factor = 2
 
   # Function to scale images
   def scale_image(image, factor):
       return pygame.transform.scale(image, (image.get_width() * factor, image.get_height() * factor))
-
+    
   start_image = scale_image(start_image, scaling_factor)
   gramps = scale_image(gramps, scaling_factor)
   passed = scale_image(passed, scaling_factor)
   teacher = scale_image(teacher, scaling_factor)
   bagu = scale_image(bagu, scaling_factor)
   thunk = scale_image(thunk, scaling_factor)
-
-# Defining the start function which contains the start logic
+ # Defining the start function which contains the start logic
   def start():
     global current_image
     global scaled_image
     name = input("ENTER YOUR NAME: ")
     current_image = gramps
-    screen.blit(current_image, (50, -40))
+    screen.blit(current_image, (15, -40))
     pygame.display.update()
 
     print(" ")
@@ -46,7 +45,7 @@ def importPhoto():
     time.sleep(1.3)
 
     current_image = passed
-    screen.blit(current_image, (50, -40))
+    screen.blit(current_image, (15, -40))
     pygame.display.update()
 
     print(" ")
@@ -59,7 +58,7 @@ def importPhoto():
     print("To do this I have found a teacher")
 
     current_image = teacher
-    screen.blit(current_image, (50, -40))
+    screen.blit(current_image, (15, -40))
     pygame.display.update()
     print(" ")
     time.sleep(1.5)
@@ -75,7 +74,7 @@ def importPhoto():
     time.sleep(1) 
 
     current_image = bagu
-    screen.blit(current_image, (50, -40))
+    screen.blit(current_image, (15, -40))
     pygame.display.update()
 
     print(" ")
@@ -85,7 +84,7 @@ def importPhoto():
     print("*thunk*")
 
     current_image = thunk
-    screen.blit(current_image, (50, -40))
+    screen.blit(current_image, (15, -40))
     pygame.display.update()
 
     time.sleep(.5)
