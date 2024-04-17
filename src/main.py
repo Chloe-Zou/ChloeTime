@@ -17,7 +17,7 @@ screen = pygame.display.set_mode((400, 300))
 
 # #load in images under a variable
 start_image = pygame.image.load('images/start.png')
-
+  
 
 # Setting the initial image to start_image
 current_image = start_image
@@ -32,6 +32,6 @@ while True:
             if event.key == K_1:
                 importPhoto()
 
-    screen.blit(current_image, (30, -90))
+    screen.blit(current_image, (100, 0))
     pygame.display.update()
-
+  
