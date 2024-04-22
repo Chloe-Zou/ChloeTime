@@ -32,6 +32,7 @@ def choose_character(screen):
     pygame.display.update()
     print("CHARACTER CHOSEN: BLUB")
     screen.blit(blub, (60,0))
+    pygame.time.delay(500000)
     pygame.display.update()
     chara = "blue"
 
