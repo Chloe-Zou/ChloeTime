@@ -30,9 +30,9 @@ def choose_character(screen):
     screen.blit(blank_image, (50, 140))
     screen.blit(blank_image, (170, 140))
     pygame.display.update()
+    print("CHARACTER CHOSEN: BLUB")
     screen.blit(blub, (60,0))
     pygame.display.update()
-    print("CHARACTER CHOSEN: BLUB")
     chara = "blue"
 
   if chose == "2":
@@ -41,9 +41,9 @@ def choose_character(screen):
     screen.blit(blank_image, (50, 140))
     screen.blit(blank_image, (170, 140))
     pygame.display.update()
+    print("CHARACTER CHOSEN: PURP")
     screen.blit(purp, (60, 0))
     pygame.display.update()
-    print("CHARACTER CHOSEN: PURP")
     chara = "purp"
 
 def chara_stats():
@@ -72,5 +72,3 @@ def chara_stats():
     power = False
     health = 20
     stamina = 10
-
-  return level, speed, power, health, stamina
