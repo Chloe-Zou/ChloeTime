@@ -16,7 +16,7 @@ def importPhoto():
   # Function to scale images
   def scale_image(image, factor):
       return pygame.transform.scale(image, (image.get_width() * factor, image.get_height() * factor))
-    
+
   start_image = scale_image(start_image, scaling_factor)
   gramps = scale_image(gramps, scaling_factor)
   passed = scale_image(passed, scaling_factor)
