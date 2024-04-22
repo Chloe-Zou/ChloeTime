@@ -2,6 +2,7 @@
 import pygame, sys
 from pygame.locals import QUIT, KEYDOWN, K_1
 from intro import importPhoto
+from character import choose_character
 
 global chara
 global level
@@ -32,9 +33,11 @@ while True:
         elif event.type == KEYDOWN:
           if event.key == K_1 and x ==1:
             importPhoto()
+            choose_character(screen)
             x += 1
-            current_image = thunk.png
+            current_image = thunk
+
 
     screen.blit(current_image, (100, 0))
     pygame.display.update()
-  
+
