@@ -4,12 +4,12 @@ from pygame.locals import QUIT, KEYDOWN, K_1
 from intro import importPhoto
 from character import choose_character
 
-global chara
-global level
-global speed
-global power
-global health
-global stamina
+# global chara
+# global level
+# global speed
+# global power
+# global health
+# global stamina
 
 #Set up pygame
 pygame.init()
@@ -20,6 +20,12 @@ screen = pygame.display.set_mode((400, 300))
 start_image = pygame.image.load('images/start.png')
 thunk = pygame.image.load('images/thunk.png')  
 x=1
+
+print("PRESS 1 TO BEGIN")
+
+# def win():
+# def loss():
+#cookOff():
 
 # Setting the initial image to start_image
 current_image = start_image
