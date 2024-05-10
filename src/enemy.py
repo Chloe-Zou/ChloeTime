@@ -11,6 +11,8 @@ class character:
   def enemyStrength(self, stage):
     return stage
   def speciality(self, power):
-    return False
+    if power == True:
+      print("POWER CHARGED")
+      return False
   def cook(self, stamina, health):
     return health, stamina
