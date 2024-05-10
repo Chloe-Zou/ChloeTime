@@ -1,4 +1,5 @@
 import pygame
+import sys
 
 class character:
   def __init__(self, level, speed, power, health, stamina):
@@ -8,15 +9,37 @@ class character:
     self.health = health
     self.stamina = stamina
 
+  def cook(self, stamina, health):
+    if stamina > 0 and health > 0:
+      print("DO YOU ACCEPT THE CHALLENGE?")
+    return health, stamina
+
+  
+  def isAlive(self, health):
+    if self.health >= 0:
+      return health
+    if self.health < 0:
+      print("You have died :(")
+      sys.exit()
+      
+  def levelUp(self, level, speed, stamina):
+    if self.level == 1 and self.speed == 2 and self.stamina == 2:
+      self.level += 1
+    return level
+  def speciality(self, power):
+    if power == True:
+      print("POWER CHARGED")
+      return False
+
 def choose_character(screen):
   global chara
 
   #render images
-  blub = pygame.image.load("blue_char.png")
-  purp = pygame.image.load("purp_char.png")
-  one = pygame.image.load("one.png")
-  two = pygame.image.load("two.png")
-  blank_image = pygame.image.load("thunk.png")
+  blub = pygame.image.load("images/blue_char.png")
+  purp = pygame.image.load("images/purp_char.png")
+  one = pygame.image.load("images/one.png")
+  two = pygame.image.load("images/two.png")
+  blank_image = pygame.image.load("images/thunk.png")
   screen.blit(blub, (-30, 0))
   screen.blit(purp, (90, 0))
   screen.blit(one, (50, 140))
@@ -32,8 +55,8 @@ def choose_character(screen):
     pygame.display.update()
     print("CHARACTER CHOSEN: BLUB")
     screen.blit(blub, (60,0))
-    pygame.time.delay(500000)
     pygame.display.update()
+    pygame.time.delay(2000)
     chara = "blue"
 
   if chose == "2":
@@ -48,28 +71,11 @@ def choose_character(screen):
     chara = "purp"
 
 def chara_stats():
-  global chara
-  global level
-  global speed
-  global power
-  global health
-  global stamina
-
-  level = 0
-  speed = 0
-  power = False
-  health = 0
-  stamina = 0
-
   if chara == "blue":
-    level = 1
-    speed = 2
-    power = False
-    health = 10
-    stamina = 10
+    charblue = character(1, 2, False, 10, 10)
+    print("Level: " + str(charblue.level) + " Speed: " + str(charblue.speed) + 
+    " Health: " + str(charblue.health) + " Stamina: " + str(charblue.stamina))
   if chara == "purp":
-    level = 1
-    speed = 1
-    power = False
-    health = 20
-    stamina = 10
+    charpurp = character(1,1,False, 20, 10)
+    print("Level: " + str(charpurp.level) + " Speed: " + str(charpurp.speed) + 
+      " Health: " + str(charpurp.health) + " Stamina: " + str(charpurp.stamina))
