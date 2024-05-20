@@ -2,7 +2,7 @@ import time
 import pygame, sys, random
 from pygame.locals import K_r, KEYDOWN, K_SPACE, K_p
 # from pygame.transform import scale
-from timer import result, timing
+from timer2 import timey
 
 onion_stew = pygame.image.load('images/Onion Stew.png')
 ONION = pygame.image.load('images/hap.png')
@@ -128,10 +128,9 @@ def recipe(num):
               
               print("Onion: Now you will wait for it to be ready")
               time.sleep(.5)
-              print("Onion: Wait for ten seconds before pressing 't'")
-              time.sleep(2)
-              timing(0, 0)
-              result()
+              print("Onion: Wait for ten seconds before pressing 'l'")
+              timey()
+              print("work?")
           else:
             time.sleep(1)
             mean()
