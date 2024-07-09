@@ -1,8 +1,8 @@
 import time
 import pygame, sys, random
-from pygame.locals import K_r, KEYDOWN, K_SPACE, K_p
+from pygame.locals import K_r, KEYDOWN, K_SPACE, K_p, K_l
 # from pygame.transform import scale
-from timer2 import timey
+from timer import timey
 
 onion_stew = pygame.image.load('images/Onion Stew.png')
 ONION = pygame.image.load('images/hap.png')
@@ -10,6 +10,7 @@ potato = pygame.image.load('images/potato.png')
 empty = pygame.image.load('images/empty.png')
 soup = pygame.image.load('images/soup.png')
 thunk = pygame.image.load("images/thunk.png")
+bowl = pygame.image.load('images/bowl.png')
 
 def mean():
   words = ['you suck.', 'you are bad.', 'you are a loser.', 'you are a failure.',
@@ -129,8 +130,11 @@ def recipe(num):
               print("Onion: Now you will wait for it to be ready")
               time.sleep(.5)
               print("Onion: Wait for ten seconds before pressing 'l'")
-              timey()
-              print("work?")
+              timey(screen)
+              if event.type == KEYDOWN and event.key == K_l:
+                print("Onion: Good job! You have finished cooking the onion stew")
+                time.sleep(.5)
+                print("Onion: Now you can eat it")
           else:
             time.sleep(1)
             mean()
