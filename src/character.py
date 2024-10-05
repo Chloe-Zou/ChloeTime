@@ -72,10 +72,10 @@ def choose_character(screen):
 
 def chara_stats():
   if chara == "blue":
-    charblue = character(1, 2, False, 10, 10)
-    print("Level: " + str(charblue.level) + " Speed: " + str(charblue.speed) + 
-    " Health: " + str(charblue.health) + " Stamina: " + str(charblue.stamina))
+    charac = character(1, 2, False, 10, 10)
+    print("Level: " + str(charac.level) + " Speed: " + str(charac.speed) + 
+    " Health: " + str(charac.health) + " Stamina: " + str(charac.stamina))
   if chara == "purp":
-    charpurp = character(1,1,False, 20, 10)
-    print("Level: " + str(charpurp.level) + " Speed: " + str(charpurp.speed) + 
-      " Health: " + str(charpurp.health) + " Stamina: " + str(charpurp.stamina))
+    charac = character(1,1,False, 20, 10)
+    print("Level: " + str(charac.level) + " Speed: " + str(charac.speed) + 
+      " Health: " + str(charac.health) + " Stamina: " + str(charac.stamina))
