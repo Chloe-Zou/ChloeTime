@@ -1,7 +1,18 @@
 import pygame
 import time
 
+gramps = None
+passed = None
+teacher = None
+bagu = None
+thunk = None
+
 def importPhoto():
+  global gramps
+  global passed
+  global teacher
+  global bagu
+  global thunk
   pygame.init()
   screen = pygame.display.set_mode((400, 300))
   start_image = pygame.image.load('images/start.png')
@@ -23,8 +34,11 @@ def importPhoto():
   teacher = scale_image(teacher, scaling_factor)
   bagu = scale_image(bagu, scaling_factor)
   thunk = scale_image(thunk, scaling_factor)
- # Defining the start function which contains the start logic
-  def start():
+
+  start(screen)
+
+# Defining the start function which contains the start logic
+def start(screen):
     global current_image
     global scaled_image
     name = input("ENTER YOUR NAME: ")
@@ -89,4 +103,3 @@ def importPhoto():
 
     time.sleep(.5)
     print(" ")
-  start()
